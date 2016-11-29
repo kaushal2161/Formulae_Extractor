@@ -12,10 +12,10 @@ wget https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.
 
 All options of formula_extractor can be seen via
 ```
-./formula_extractor --help
-usage: formula_extractor.py [-h] [-f FILE] [-s SIZE] [-d DIR] [-t TAG]
+./formulae_extractor.py --help
+usage: formulae_extractor.py [-h] [-f FILE] [-s SIZE] [-d DIR] [-t TAG]
 
-extract wikipages that contain the math tag
+Extract Formulae from wikipages.
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -31,4 +31,3 @@ optional arguments:
                         the tag to search for (default: math)
   
 ```
-
