@@ -56,6 +56,13 @@ def split_xml( filename, splitsize, dir, tag):
 		print finalformula
                 chunkfile.write(title)
                 chunkfile.write(finalformula)
+		
+	if pagecount > splitsize:
+                        
+            chunkfile.close()
+            pagecount = 0 # RESET pagecount
+            filecount += 1 # increment filename
+            chunkfile = bz2.BZ2File( chunkname( filecount ), 'w')
         
             
     try:        
