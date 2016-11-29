@@ -20,11 +20,7 @@ def split_xml( filename, splitsize, dir, tag):
     # Read line by line
     bzfile = bz2.BZ2File( filename )
     
-    for line in bzfile:
-        
-        if '</siteinfo>' in line:
-            break
-    
+     
     for line in bzfile:
         # the <page determines new wiki page
         if '<page' in line:
